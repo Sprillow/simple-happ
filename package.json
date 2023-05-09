@@ -1,0 +1,15 @@
+{
+  "name": "todo-ios",
+  "private": true,
+  "scripts": {
+    "build:dna-ios": "hc dna pack --dylib-ios ./dna/workdir",
+    "build:happ": "npm run build:dna-ios && hc app pack --recursive ./workdir",
+    "dev": "echo 'pass' | dotenv holochain-runner --admin-ws-port 65434 --app-ws-port 1234 --keystore-path $KEYSTORE_PATH workdir/todo.happ --bootstrap-url https://bootstrap.holo.host"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

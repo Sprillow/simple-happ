@@ -1,0 +1,10 @@
+node_modules/
+/dist/
+/target/
+/databases/
+/.cargo/
+.hc*
+.hc
+.running
+.DS_Store
+.env

@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+  "dna/integrity_zomes/*",
+  "dna/coordinator_zomes/*"
+]
+
+[workspace.dependencies]
+hdi = { version = "0.3.0" }
+hdk = { version = "0.2.0" }
+serde = "1"
+holochain = {version = "0.2.0"}
+
+[profile.dev]
+opt-level = "z"
+
+[profile.release]
+opt-level = "z"
