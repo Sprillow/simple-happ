@@ -10,3 +10,8 @@ pub enum EntryTypes {
 #[derive(Clone)]
 pub struct Task(pub String);
 
+#[hdk_link_types]
+pub enum LinkTypes {
+    AllTasks,
+}
+
