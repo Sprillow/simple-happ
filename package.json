@@ -4,7 +4,7 @@
   "scripts": {
     "build:zomes": "CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown",
     "build:dna-ios": "hc dna pack --dylib-ios ./dna/workdir",
-    "build:happ": "hc app pack --recursive ./workdir",
+    "build:happ": "hc app pack ./workdir",
     "dev": "echo 'pass' | holochain-runner workdir/todo.happ --admin-ws-port 65434 --app-ws-port 1234 --keystore-path /Users/weswalla/hc-keystore --bootstrap-url https://bootstrap.holo.host"
   },
   "engines": {
