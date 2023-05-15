@@ -8,13 +8,13 @@ integrity:
   zomes:
     - name: todo_integrity
       bundled: ../../target/wasm32-unknown-unknown/release/todo_integrity.wasm
-      # dylib: ios/todo_integrity.dylib
+      dylib: ios/todo_integrity.dylib
 
 coordinator:
   zomes:
     - name: todo
       bundled: ../../target/wasm32-unknown-unknown/release/todo.wasm
-      # dylib: ios/todo.dylib
+      dylib: ios/todo.dylib
       dependencies:
         - name: todo_integrity
 
